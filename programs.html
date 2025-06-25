@@ -14,40 +14,39 @@
      <div class="container-fluid">
         <section class="row">
             <div class="col-md-12">
-                <nav class="navbar bg-light navbar-expand-md ">
-                    <a href="index.html" class="navbar-brand d-flex align-items-center" style="color:black; gap: 10px;">
-  <img src="../static/images/background.png" alt="KYSA Logo" style="height: 40px; width: 40px;">
-  <span style="font-weight: bold;">KYSA</span>
-</a>
-                    <button 
-                    type="button"
-                    class="navbar-toggler  "
-                    data-bs-toggle="collapse"
-                    data-bs-target="#items">
-                        <span class="navbar-toggler-icon bg-light"></span>
-                    </button>
-                     <div id="items" class="collapse navbar-collapse " >
-                        
-                        <a href="index.html" class="nav-link" style="padding: 10px; color: black; ">Home</a>
-                        
-                        <br>
-                        <a href="aboutus.html"class="nav-link"  style="padding: 10px; color: black;">Aboutus</a>
-                        <br>
-                        <a href="programs.html"class="nav-link"  style="padding: 10px; color: black;">Programs</a>
-                        <br>
-                        <a href="contacts.html"class="nav-link"  style="padding: 10px; color: black;">Contacts</a>
-                        <br>
-                        <a href="gallery.html"class="nav-link"  style="padding: 10px; color: black;">Gallery</a>
-                        <br>
+                <nav class="navbar bg-light navbar-expand-md fixed-top">
+  <div class="container-fluid">
+    <!-- Brand + Toggler (flex row with space between) -->
+    <div class="d-flex justify-content-between align-items-center w-100">
+      <!-- Brand -->
+      <a href="index.html" class="navbar-brand d-flex align-items-center" style="color:black; gap: 10px;">
+        <img src="../static/images/background.png" alt="KYSA Logo" style="height: 40px; width: 40px;">
+        <span style="font-weight: bold;">KYSA</span>
+      </a>
 
-                        </div>
+      <!-- Toggler (hamburger) -->
+      <button 
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#items">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
 
-                        
-                         
-                   
-                    </div>
+    <!-- Collapsible nav links -->
+    <div class="collapse navbar-collapse" id="items">
+      <div class="navbar-nav ms-auto"> <!-- push links right -->
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="aboutus.html" class="nav-link">Aboutus</a>
+        <a href="programs.html" class="nav-link">Programs</a>
+        <a href="contacts.html" class="nav-link">Contacts</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+      </div>
+    </div>
+  </div>
+</nav>
 
-                </nav>
             </div>
         </section>
      </div>
