@@ -1,8 +1,8 @@
 .navbar {
   width: 100%;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0.5rem 1rem;
   margin: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 h1{
     margin: 2.5%;
@@ -162,3 +162,26 @@ html {
       height: auto;
       object-fit: cover;
     }
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+@media (max-width: 576px) {
+  .navbar-brand span {
+    font-size: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.95rem;
+  }
+
+  .navbar-toggler {
+    padding: 0.25rem 0.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .navbar-brand img {
+    height: 30px;
+    width: 30px;
+  }
+}
